@@ -15,18 +15,18 @@ tasks:
 
   build:
     cmds:
-      - docker build -f ./cmd/api-service/Dockerfile -t lendy1/api-service:latest .
-      - docker build -f ./cmd/info-service/Dockerfile -t lendy1/info-service:latest .
-      - docker build -f ./cmd/login-service/Dockerfile -t lendy1/login-service:latest .
-      - docker build -f ./cmd/root-service/Dockerfile -t ledny1/root-service:latest .
+      - docker build -f ./cmd/api-service/Dockerfile -t lendy1/api-app:latest .
+      - docker build -f ./cmd/info-service/Dockerfile -t lendy1/info-app:latest .
+      - docker build -f ./cmd/login-service/Dockerfile -t lendy1/login-app:latest .
+      - docker build -f ./cmd/root-service/Dockerfile -t lendy1/root-app:latest .
 
   
   push:
     cmds:
-      - docker push lendy1/api-service:latest 
-      - docker push lendy1/info-service:latest 
-      - docker push lendy1/login-service:latest 
-      - docker push lendy1/root-service:latest 
+      - docker push lendy1/api-app:latest 
+      - docker push lendy1/info-app:latest 
+      - docker push lendy1/login-app:latest 
+      - docker push lendy1/root-app:latest 
 
   deploy:
     cmds:
