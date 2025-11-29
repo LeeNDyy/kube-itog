@@ -1,0 +1,14 @@
+name: test golang files
+on: 
+  workflow_dispatch: 
+jobs:
+  test_golang:
+    runs-on: golang
+    steps:
+      - name: Install GoLang v1.24.9
+        uses: actions/setup-go@v6
+        with:
+          go-version: "1.24.9"
+
+      - name: Check out repository code
+        uses: actions/checkout@v6
